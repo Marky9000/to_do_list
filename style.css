@@ -1,0 +1,87 @@
+html {
+  height: 100vh;
+  min-width: 600px;
+  background-image: linear-gradient(
+    130deg,
+    rgb(235, 223, 223),
+    rgb(68, 68, 129)
+  );
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+h1 {
+  color: rgb(51, 8, 51);
+  text-shadow: 2px 2px rgb(146, 146, 185);
+}
+.container {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+form {
+  background-color: rgb(219, 219, 223);
+  display: flex;
+  border-radius: 10px;
+  padding: 9px;
+}
+
+#addToList {
+  background-color: rgb(105, 179, 142);
+}
+li {
+  position: relative;
+  background-color: rgb(219, 219, 223);
+  display: flex;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 4px;
+}
+input[type="text"] {
+  height: 30px;
+  font-size: 1rem;
+  color: grey;
+  flex-grow: 1;
+  border: none;
+}
+ul li.checked {
+  background: rgb(105, 179, 142);
+  color: #fff;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  content: "";
+  margin: 5px;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 10px;
+  width: 7px;
+}
+
+.deleteThis {
+  position: absolute;
+  right: 2px;
+  background-color: rgb(238, 108, 108);
+}
+h3 {
+  font-size: 0px;
+}
+h4 {
+  color: aliceblue;
+  font-size: 10px;
+}
+footer {
+  position: absolute;
+  bottom: 2px;
+}
